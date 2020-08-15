@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .sunPosition img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid yellow;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter a location for Weather ..." id="getCity" autocomplete="off">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-danger" id="searchBtn">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="" id="weatherIcon">
+            <h1 id="cityName">City, Country</h1>
+            <h3><span id="temp">00</span>&deg;C</h3>
+            <h1 class="lead" id="weatherLead">Weather</h1>
+            <div class="sunPosition d-flex justify-content-center">
+                <div class="sunriseTime p-2">
+                    <img src="images/sunrise.jpg" alt="">
+                    <div>
+                        <h3>Sunrise</h3>
+                        <p>Hour : Min : Sec AM</p>
+                    </div>
+                </div>
+                <div class="sunsetTime p-2">
+                    <img src="images/sunset.jpg" alt="">
+                    <div>
+                        <h3>Sunset</h3>
+                        <p>Hour : Min : Sec PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
